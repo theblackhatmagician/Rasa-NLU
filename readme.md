@@ -1,3 +1,3 @@
-My Projects and Experiments on Rasa: Open source conversational AI
+My Projects and Experiments on Rasa 3.0: Open source conversational AI
 <br>
-Install python 3.7 (RASA3 will not work on 3.8+)
+Install python 3.7 (RASA 3.0 will not work on 3.8+)
