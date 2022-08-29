@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:    
+- intent: tel_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+    
+- intent: user_name
+  examples: |
+    - I am [pranav](name)
+    - i am [rahul](name)
+    - [ashik](name)
+    - my name is [ashish](name)
+    - my name is [rahul](name)
+    - my name is [apneet](name)
+    - [ashish](name) is my name
+    - [ashish](name) this side
+    - people call me [ashish](name)
+
+- intent: email_id
+  examples: |
+    - its [cusat@gmail.com](email)
+    - [pranav@gmail.com](email)
+    - [xyz@hptmail.com](email)
+    - [abc@cusat.ac.in](email)
+
+- regex: email
+  examples: |
+    - ([a-zA-Z0-9+._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)
+    
+- intent: mobile_number
+  examples: |
+    - my number is [8209829808](number)
+    - [8209829808](number)
+    - [8209829808](number)
+    - my nobile number is [8209829808](number)
+
+- regex: number
+  examples: |
+    - [(+]*[0-9]{10}[()+. -]*

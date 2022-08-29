@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+- story: happy name path
+  steps:
+  - intent: tel_name
+  - action: utter_name
+  - action: utter_ask_name
+  - intent: user_name
+    entities:
+    - name: "rahul"
+  - slot_was_set:
+    - name: "rahul"
+  - action: utter_ask_number
+  - intent: mobile_number
+    entities:
+    - number: "8209829808"
+  - action: utter_email_id
+  - intent: email_id
+    entities:
+    - email: "cusat@gmail.com"
+  - action: utter_thanks
+  - action: action_details
